@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head></head>
+
+    <body>
+
+        <div class="general">
+
+            <div class="form">
+            
+                <div class="picNFA">
+
+                    <div class="pic">
+                        <img src="profilePic.png">
+                    </div>
+                    
+                    <div class="NFA">
+    
+                        <div class="NF">
+                            <input type="text" id="nombre" placeholder="Nombre" size="20">
+            
+                            <input type="date" id="fechaNacimiento"
+                                    value="2021-04-28"
+                                    min="1900-01-01" max="2021-04-30">
+        
+                        </div>
+                        <input type="text" id="apellido" placeholder="Apellido" size="40">
+    
+                    </div>
+
+                </div>
+                
+                <div class="direccion">
+
+                    <input type="text" id="calle" placeholder="Calle" size="35">
+    
+                    <input type="text" id="colonia" placeholder="Colonia" size="20">
+        
+                    <input type="text" id="codigoPostal" placeholder="C.P." size="5">
+
+                </div>
+    
+                <div class="cuenta">
+
+                    <input type="email" id="correo" placeholder="Correo" size="50">
+                
+                    <input type="text" id="cuenta" placeholder="Cuenta" size="6" list="cuentaList">
+                    <datalist id="cuentaList">
+                        <option value="Admin">
+                        <option value="Usuario">
+                        <option value="Vendedor">
+                    </datalist>
+
+                </div>
+
+                <div class="password">
+                    <div><input type="password" id="contraseña" placeholder="Password" size="20"></div>
+                    <div><input type="password" id="contraseña" placeholder="Password" size="20"></div>
+                </div>
+
+                <div class="submit">
+                    <button onclick="submit()">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <link rel="stylesheet" href="index.css">
+        <script src="http:/ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
