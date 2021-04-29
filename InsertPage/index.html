@@ -45,21 +45,22 @@
 
                     <input type="email" id="correo" placeholder="Correo" size="50">
                 
-                    <input list="cuenta" placeholder="Admin" size="6">
-                    <datalist id="cuenta">
+                    <input type="text" id="cuenta" placeholder="Cuenta" size="6" list="cuentaList">
+                    <datalist id="cuentaList">
                         <option value="Admin">
-                        <option value="User">
+                        <option value="Usuario">
+                        <option value="Vendedor">
                     </datalist>
 
                 </div>
 
                 <div class="password">
-                    <div><input type="text" id="contraseña" placeholder="Password" size="20"></div>
-                    <div><input type="text" id="contraseña" placeholder="Password" size="20"></div>
+                    <div><input type="password" id="contraseña" placeholder="Password" size="20"></div>
+                    <div><input type="password" id="contraseña" placeholder="Password" size="20"></div>
                 </div>
 
                 <div class="submit">
-                    <button onclick="x()">Submit</button>
+                    <button onclick="submit()">Submit</button>
                 </div>
 
             </div>
@@ -67,6 +68,8 @@
         </div>
 
         <link rel="stylesheet" href="index.css">
+        <script src="http:/ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
     </body>
 
 </html>
