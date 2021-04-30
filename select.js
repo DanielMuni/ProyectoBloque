@@ -12,6 +12,7 @@ function selectAll() {
             var htmlTableUsers = '<table border=1>';
 
             htmlTableUsers +=   '<tr>' +
+                                    '<th>ID</th>'+
                                     '<th>Nombre</th>'+
                                     '<th>Apellido</th>'+
                                     '<th>Cuenta</th>'+
@@ -26,10 +27,11 @@ function selectAll() {
             arrUsers.forEach(function(item) {
                 console.log(item);
                 htmlTableUsers +=   '<tr>' +
+                                        '<td>' + item.id + '</td>' +
                                         '<td>' + item.nombre + '</td>' +
                                         '<td>' + item.apellido + '</td>' +
                                         '<td>' + item.cuenta + '</td>' +
-                                        '<td>' + item.fechaNacimiento + '</td>' +
+                                        '<td>' + item.fechaNacimiento.toString().substring(0,10) + '</td>' +
                                         '<td>' + item.correo + '</td>' +
                                         '<td>' + item.password + '</td>' +
                                         '<td>' + item.calle + '</td>' +
