@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .general{
     width: 100%;
     height: 500px;
@@ -75,6 +78,54 @@
     width: 70%;
 }
 
+.submit{
+    height: 50px;
+}
+
 button{
-    background-color: #20AC36;
+    background: #e2e4e9;;
+    color: #0b941e;;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #B6B8BD;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #0b941e;; /* Green */
+    color: white;
+    border: #B6B8BD;;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.nav{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: ror;
+    padding: 2em;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: #2d97ed;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: #e2e4e9;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    background: #2d97ed;
+    color: white;
+    border: #2d97ed;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

@@ -4,6 +4,38 @@ body{
     justify-content: space-between;
     flex-direction: column;
     padding: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: ror;
+    padding: 2em;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: #0b941e;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: #e2e4e9;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    background: #0b941e;
+    color: white;
+    border: #0b941e;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .contenido{
